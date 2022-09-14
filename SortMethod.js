@@ -5,3 +5,11 @@ numbers.sort( ( a, b ) => {
     return 0;
 } );
 console.log( numbers );
+console.log("Short method")
+let numbers1 = [0, 1, 2, 3, 10, 20, 30, 25, 21];
+numbers1.sort( ( a, b ) => a - b );
+console.log( numbers1 );
+//let try sorting a string array alphabetically
+let string = ['cat', 'dog', 'elephant', 'bee', 'ant'];
+string.sort();
+console.log( string );
