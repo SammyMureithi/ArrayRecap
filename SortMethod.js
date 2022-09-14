@@ -59,3 +59,11 @@ employees.sort( ( a, b ) => {
 } );
 console.log( 'String sort' );
 console.table( employees );
+//let's sort considering the date value
+
+employees.sort( ( a, b ) => {
+    x = new Date( a.hireDate );
+    y = new Date( b.hireDate );
+    return x - y
+} );
+console.table( employees );
