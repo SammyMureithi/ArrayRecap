@@ -11,4 +11,10 @@ let range = {
 const isInRange = numbers.every( function(number){
     return number >= this.min && number <= this.max;
 }, range );
-console.log("Range "+ isInRange );
+console.log( "Range " + isInRange );
+//lets check what happens from empty array
+const isInOurRange = [].every( function ( e ) {
+    return e >= this.min && e <= this.max;
+}, range );
+console.log( isInOurRange );
+//we note that if work with empty array it all returns true
