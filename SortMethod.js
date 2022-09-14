@@ -33,3 +33,10 @@ mixedCaseAnimals.sort( ( a, b ) => {
 } );
 console.log( "Mixed String Case Array" );
 console.log( mixedCaseAnimals );
+//Let's take a look on how we sort string of non-ASCII characters
+let animaux = ['zèbre', 'abeille', 'écureuil', 'chat'];
+animaux.sort( ( a, b ) => {
+
+    return a.localeCompare( b );
+} );
+console.log( animaux );
