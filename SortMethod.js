@@ -22,3 +22,14 @@ string.sort( ( a, b ) => {
 } );
 console.log( "Descending string order" );
 console.log( string );
+//what happens when we have mixed string cases
+let mixedCaseAnimals = [
+    'Cat', 'dog', 'Elephant', 'bee', 'ant'
+];
+mixedCaseAnimals.sort( ( a, b ) => {
+    let x = a.toLowerCase();
+    let y = b.toLowerCase();
+    return x == y ? 0 : x > y ? 1 : -1;
+} );
+console.log( "Mixed String Case Array" );
+console.log( mixedCaseAnimals );
