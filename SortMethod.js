@@ -40,3 +40,22 @@ animaux.sort( ( a, b ) => {
     return a.localeCompare( b );
 } );
 console.log( animaux );
+
+//Lets learn about sorting array object
+let employees = [
+    {name: 'John', salary: 90000, hireDate: "July 1, 2010"},
+    {name: 'David', salary: 75000, hireDate: "August 15, 2009"},
+    {name: 'Ana', salary: 80000, hireDate: "December 12, 2011"}
+];
+//lets sort the object considering a numeric value
+employees.sort( ( a, b ) => {
+    return a.salary - b.salary;
+} );
+console.log( 'Numeric sort' );
+console.table( employees );
+//let sort the object considering a string value
+employees.sort( ( a, b ) => {
+    return a.name == b.name ? 0 : a.name > b.name ? 1 : -1;
+} );
+console.log( 'String sort' );
+console.table( employees );
