@@ -13,3 +13,12 @@ console.log( numbers1 );
 let string = ['cat', 'dog', 'elephant', 'bee', 'ant'];
 string.sort();
 console.log( string );
+
+//we could reverse the order of our array to descending order
+string.sort( ( a, b ) => {
+    if ( a > b ) return -1;
+    if ( a < b ) return 1;
+    return 0;
+} );
+console.log( "Descending string order" );
+console.log( string );
