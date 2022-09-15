@@ -20,3 +20,11 @@ activities.map( activity => {
     activity[2] = perC+ "%";
 } )
 console.table( activities );
+
+//we could also remove elements from our array
+activities.forEach( activity => {
+    activity.pop( 2 );
+} )
+//We could also get rid our array in our multidimensional array
+activities.splice( 1, 1 );
+console.table( activities );
