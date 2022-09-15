@@ -28,3 +28,11 @@ activities.forEach( activity => {
 //We could also get rid our array in our multidimensional array
 activities.splice( 1, 1 );
 console.table( activities );
+
+//lets now iterate over our array in multidimension array
+for ( i = 0; i < activities.length; i++ ){
+    let atArray = activities[i];
+    for ( k = 0; k < atArray.length; k++ ){
+        console.log( `[${i},${k}]=${activities[i][k]}` );
+    }
+}
