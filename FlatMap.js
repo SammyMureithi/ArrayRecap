@@ -36,3 +36,12 @@ let output = cart.flatMap( item => {
     }
 } );
 console.table( output );
+
+//lets calculate the total of our cart
+let total = output.reduce( ( sum, item ) => {
+    if ( !item.freeOfCharge ) {
+        sum += item.price * item.qty
+    }
+    return sum
+}, 0 );
+console.log("Total to be paid Kes." +total );
