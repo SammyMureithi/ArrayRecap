@@ -24,7 +24,14 @@ let output = cart.flatMap( item => {
             qty: item.qty,
             price: 5,
             freeOfCharge: true
-        }]
+        },
+        {
+            name: 'Screen',
+            qty: item.qty,
+            price: 1200,
+            freeOfCharge: false
+        }
+        ]
     }
     else {
         return [item, {
